@@ -1,0 +1,10 @@
+serv:
+  port: ":8080"
+
+db:
+  host: "db"
+  port: "5432"
+  user: "postgres"
+  dbname: "postgres"
+  password: "qwerty"
+  sslmode: "disable"
