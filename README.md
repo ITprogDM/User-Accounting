@@ -35,23 +35,39 @@ bash
    git clone https://github.com/ITprogDM/User-Accounting.git
    cd UchetUsers
 Установите зависимости:
+
 go mod tidy
+
 Сгенерируйте Swagger-документацию:
+
 swag init -g internal/handlers/handler.go -o docs
+
 Запустите сервер:
+
 go run main.go
+
 API доступно по адресу:
+
 http://localhost:8080
+
 Swagger UI:
-bash
+
 http://localhost:8080/swagger/index.html
+
 🐳 Запуск в Docker
+
 Соберите и запустите контейнер:
+
 docker-compose up --build
+
 API доступно на http://localhost:8080
+
 Swagger-документация:
+
 http://localhost:8080/swagger/index.html
+
 📄 API Методы
+
 🟢 Создание пользователя
 POST /users
 
